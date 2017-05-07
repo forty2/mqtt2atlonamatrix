@@ -56,6 +56,9 @@
     "url": "https://github.com/forty2/mqtt2atlonamatrix/issues"
   },
   "homepage": "https://github.com/forty2/mqtt2atlonamatrix#readme",
+  "engines": {
+    "node": ">=6.0"
+  },
   "dependencies": {
     "mqtt": "^2.7.1",
     "mqtt-topics": "^1.0.2",
