@@ -1,0 +1,67 @@
+{
+  "name": "mqtt2atlonamatrix",
+  "version": "1.0.0",
+  "description": "Bridge from MQTT to Atlona HDMI matrix switches. Attempts to follow mqtt-smarthome pattern.",
+  "bin": {
+    "mqtt2atlonamatrix": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist -D",
+    "clean": "rm -rf dist/",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forty2/mqtt2atlonamatrix.git"
+  },
+  "keywords": [
+    "atlona",
+    "matrix",
+    "remote",
+    "control",
+    "mqtt",
+    "smarthome",
+    "home",
+    "automation"
+  ],
+  "author": "Zach Bean <zb@forty2.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-plugin-syntax-function-bind": "^6.13.0",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-env": "^1.4.0"
+  },
+  "babel": {
+    "sourceMaps": "inline",
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": 6.0
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "syntax-function-bind",
+      "transform-function-bind",
+      "transform-object-rest-spread"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/forty2/mqtt2atlonamatrix/issues"
+  },
+  "homepage": "https://github.com/forty2/mqtt2atlonamatrix#readme",
+  "dependencies": {
+    "mqtt": "^2.7.1",
+    "mqtt-topics": "^1.0.2",
+    "rxjs": "^5.3.0",
+    "source-map-support": "^0.4.15",
+    "yargs": "^8.0.1",
+    "debug": "^2.6.4"
+  }
+}
