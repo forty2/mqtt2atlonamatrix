@@ -1,6 +1,7 @@
 # mqtt2atlonamatrix
 > Bridge from MQTT to Atlona HDMI matrix switches. Attempts to follow mqtt-smarthome pattern.
 
+[![mqtt-smarthome](https://img.shields.io/badge/mqtt-smarthome-blue.svg)](https://github.com/mqtt-smarthome/mqtt-smarthome)
 [![NPM Version][npm-image]][npm-url]
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
